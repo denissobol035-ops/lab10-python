@@ -29,7 +29,7 @@ def main() -> None:
 
     if args.format == "text":
         result = build_report(stats)
-    else:
+    elif args.format == "json":
         result = json.dumps(stats, indent=2)
 
     logger.info("Writing output file")
