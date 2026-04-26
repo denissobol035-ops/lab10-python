@@ -23,3 +23,14 @@ Human-readable report
 
 json:
 Structured data with statistics
+
+
+## Example
+
+Create a file data.txt with content:
+
+1, 2; 3  4.5
+
+Run:
+
+python -m report_tool --input data.txt --out result.txt --format text --log-level INFO
